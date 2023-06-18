@@ -1,0 +1,159 @@
+/* General */
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../font/Norse-Bold.otf);
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+#content {
+    display: flex;
+    flex-wrap: row wrap;
+    overflow-y: hidden;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Left side */
+
+#left {
+    width: 35vw;
+    position: relative;
+}
+
+#background-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#logo-text {
+    color: white;
+    font-family: Norse-Bold;
+    font-size: calc(5vh + 40px);
+    overflow: hidden;
+}
+
+#logo-image {
+    height: calc(8vh + 50px);
+}
+
+#logo {
+    padding: 2vh 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Right side */
+
+#right {
+    width: 65vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#right > .middle,
+#right > .top,
+#right > .bottom {
+    flex: 1;
+}
+
+#right > .middle {
+    min-height: 13rem;
+}
+
+#right > .top > strong {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    height: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#right > .middle {
+    box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+#signup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.3rem 1rem 0 0;
+}
+
+#signup > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    color: rgb(30, 30, 30);
+    margin-right: 2rem;
+}
+
+input {
+    border-color: #e5e7eb;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.1rem;
+    outline: none;
+    padding: 0.1rem 0.3rem;
+}
+
+#signup > div > input:focus {
+    border-color: rgb(66, 141, 255);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    border-color: rgb(206, 0, 0);
+}
+
+.errormsg {
+    color: rgb(206, 0, 0);
+    font-size: 0.5rem;
+}
+
+#right > .bottom {
+    padding: 1.5rem 2rem;
+    font-size: 0.8rem;
+}
+
+#right a {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bottom > button {
+    background-color: #596d48;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.2rem;
+}
+
+.bottom > button:hover {
+    cursor: pointer;
+}
